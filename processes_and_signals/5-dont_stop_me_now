@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#display
+prog_pid=()
+readarroy -t prog_pid < < (pgrep -la -x "bash*" | grep '4-to_infinity_and_beyond' | cut -d ' ' -f 1)
+for ((i = o; i < "${#prog_pid [0]}"; i++)) do
+        kill -$ SIGTERM "${prog_pid[1]}"
+done
