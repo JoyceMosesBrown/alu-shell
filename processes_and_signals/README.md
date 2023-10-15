@@ -1,2 +1,1 @@
-#!/bin/bash
-Shell
+Author: joshua alana

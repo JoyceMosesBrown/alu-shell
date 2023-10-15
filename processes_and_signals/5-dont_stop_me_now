@@ -5,3 +5,4 @@ readarray -t prog_pid < <(pgrep -la -x "bash.*" | grep '4-to_infinity_and_beyond
 for ((i = 0; i < "${#prog_pid[@]}"; i++)) do
 	kill -s SIGTERM "${prog_pid[i]}"
 done
+
